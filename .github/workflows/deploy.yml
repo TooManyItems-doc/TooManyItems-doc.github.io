@@ -45,7 +45,7 @@ jobs:
         run: git clone https://github.com/EB-wilson/TooManyItems.git
 
       - name: Generate document pages
-        run: ./TooManyItems/gradlew :generate
+        run: ./TooManyItems/gradlew :dokkaGenerate
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
